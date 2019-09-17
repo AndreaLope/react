@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {array} from './document.json'
+import {menu} from 'valores.json';
 function App() {
   constructor() {
     super();
@@ -10,6 +10,7 @@ function App() {
       ntareas=10
     }
   }
+
   return (
     <div className="App">
       <header className="App-header">
