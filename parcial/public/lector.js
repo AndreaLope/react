@@ -11,9 +11,9 @@ var xmlhttp = new XMLHttpRequest();
 
             for (i in dataArray.menu)
             {
-                for (j in dataArray.programming_languages[i].description)
+                for (j in dataArray.menu[i].description)
                 {
-                    displayData += "<b>Text: </b> " + dataArray.menu[i].text + "<br>";
+                    displayData += "<b>Text: </b> " + dataArray.menu[j].text + "<br>";
                     displayData += "<br><hr>";
                 }
             }
@@ -22,5 +22,5 @@ var xmlhttp = new XMLHttpRequest();
         document.getElementById("displayData").innerHTML = displayData;
         };
         
-        xmlhttp.open("GET", "valor.json", true);
+        xmlhttp.open("GET", "valore.json", true);
         xmlhttp.send();

@@ -11,19 +11,29 @@ class App extends Component{
   }
   rander()
   {
-  	const menu=this.state.menu.map((todo, i)=>{
+  	const menu= this.state.menu.map((todo, i)=>{
   		return (
-  			<div className='card'>
   			{todo.text}
-  			</div>
   			)
 
-  	})
+  	});
   	return (
     <div className="App">
-    <nav className="navbar"
-    {menu}
-    </nav> 
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+        {menu}
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
