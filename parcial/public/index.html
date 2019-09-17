@@ -33,22 +33,19 @@
     <div class="container mt-3">
 
       <div class="row">
-
-        <div class="col-sm-12">
-
-          <div class="shadow p-3 mb-5 rounded border border-info">
-
-            <h1 class="mt-3 text-center">Lenguajes de Programación mas famosos</h1>
-
-            <hr>
-
-            <p id="displayData"></p>
-
-          </div>
-
-        </div>
-
-      </div>
+        <nav>
+          <nav className='navload'>
+            <script type="text/javascript">
+            function lee_json() {
+            $.getJSON("valore.json", function(menu) {
+                alert("menu: " + menu["text"]);
+                $.each(menu["text"], function(idx,text) {
+                    alert("Numero primo: " + text);
+                });
+            });
+        }
+    </script>
+        </nav>
 
     </div>
     <script src="lector.js"></script>
