@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-inmport {array} from './document.json'
+import {array} from './document.json'
 function App() {
   constructor() {
     super();
