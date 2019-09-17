@@ -1,11 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+inmport {array} from './document.json'
 function App() {
+  constructor() {
+    super();
+    this.state={
+      title='Aplicacion',
+      ntareas=10
+    }
+  }
   return (
     <div className="App">
       <header className="App-header">
+          {this.state.title}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
